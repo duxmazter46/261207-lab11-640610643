@@ -11,5 +11,7 @@ export default function roomRoute(req, res) {
   }
   const chatrooms = readChatRoomsDB();
 
+  return res.json({ ok: true, chatrooms });
+
   //create room data and return response
 }
